@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hbox digital</title>
+    <meta name="description"
+        content="Portfolio of Hbox digital, Full Stack Mobile Application Engineer. I build scalable, production ready mobile applications from concept to App Store and Play Store launch.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        background: '#0d0d0d',
+                        foreground: '#f5f5f5',
+                        card: '#161616',
+                        'card-foreground': '#f5f5f5',
+                        muted: '#262626',
+                        'muted-foreground': '#a3a3a3',
+                        primary: '#3b82f6', // blue-500
+                        border: '#262626',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div
+        class="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.05),transparent_50%),radial-gradient(circle_at_70%_60%,rgba(59,130,246,0.1),transparent_50%)] pointer-events-none">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 /80 backdrop-blur-md border-b border-border/50">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="/assets/profile.png" alt="Hbox digital"
+                    class="w-10 h-10 rounded-full object-cover border border-border/50 shadow-sm group-hover:border-primary/50 transition-all duration-300">
+                <span
+                    class="text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">Hbox digital.</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#case-studies"
+                    class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Work</a>
+                <a href="#process"
+                    class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Process</a>
+                <a href="#expertise"
+                    class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Expertise</a>
+            </div>
+
+            <!-- Mobile Menu Button (Simple implementation) -->
+            <div class="md:hidden">
+                <a href="#case-studies" class="text-sm font-medium text-foreground">Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero relative min-h-[90vh] flex items-center justify-center py-20 overflow-hidden">
+            <div class="container mx-auto px-4 z-10 relative">
+                <div class="max-w-5xl mx-auto text-center">
+                    <div class="mb-8 relative inline-block group">
+                        <div
+                            class="absolute inset-0 bg-primary/20 blur-2xl rounded-full transform scale-110 group-hover:bg-primary/30 transition-all duration-500">
+                        </div>
+                        <img src="/assets/profile.png" alt="Hbox digital"
+                            class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-background shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-500 mx-auto">
+                    </div>
+                    <h1 class="mb-10">
+                        <span
+                            class="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-6 text-foreground">Hbox digital.</span>
+                        <span
+                            class="block text-2xl sm:text-3xl md:text-4xl font-medium text-primary tracking-tight">
+                            One-Stop Software Solutions</span>
+                    </h1>
+                    <p
+                        class="mx-auto text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl">
+                        Transforming ideas into high-performance iOS & Android experiences. We build scalable, production-ready apps with <br>pixel-perfect UI and seamless backend integration taking you from concept to App Store launch.
+                    </p>
+                    <!-- <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="https://www.upwork.com/agencies/hboxdigital/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:scale-105 hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 tracking-wide">
+                            Hire Me on Upwork
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Credibility Snapshot -->
+        <section class="credibility">
+            <div class="container">
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <span class="stat-value">8+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">25+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-value">20+</span>
+                        <span class="stat-label">Apps Shipped</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">Job Success</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services py-16 " id="expertise">
+            <div class="mx-auto w-full max-w-[1536px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+                <div class="relative z-10">
+                    <div class="text-center mb-16" style="opacity: 1; transform: none;">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"
+                            style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone">
+                                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                                <path d="M12 18h.01"></path>
+                            </svg><span>Mobile First Expertise</span></div>
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"><span class="text-foreground">Mobile
+                                Tech Stack </span><span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-500 to-primary">&amp;
+                                Tools</span></h2>
+                        <p class="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg">Building production
+                            ready mobile apps that scale cleanly and perform reliably</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
+                        <!-- Cross Platform Mobile Development -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-layers text-foreground group-hover:text-primary transition-colors">
+                                                    <path
+                                                        d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+                                                    <path
+                                                        d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+                                                    <path
+                                                        d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                Cross Platform</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">High quality iOS
+                                                and Android apps from a single codebase</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>React Native
+                                            </li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Flutter</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Focused on performance, stability, and
+                                            store compliant builds.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Native Platforms -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-code-2 text-foreground group-hover:text-primary transition-colors">
+                                                    <path d="m18 16 4-4-4-4" />
+                                                    <path d="m6 8-4 4 4 4" />
+                                                    <path d="m14.5 4-5 16" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                Native Platforms</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">Deep understanding
+                                                of platform specific behavior</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>iOS</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Android</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Including TestFlight, App Store
+                                            Connect, Google Play Console.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Backend & Services -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-database text-foreground group-hover:text-primary transition-colors">
+                                                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                                    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                                                    <path d="M3 12A9 3 0 0 0 21 12" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                Backend Services</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">Lightweight
+                                                backends designed specifically for mobile apps</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Supabase</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Firebase</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Node.js</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>PHP & Laravel
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Used for authentication, subscriptions,
+                                            storage, and secure APIs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- In App Purchases -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-credit-card text-foreground group-hover:text-primary transition-colors">
+                                                    <rect width="20" height="14" x="2" y="5" rx="2" />
+                                                    <line x1="2" x2="22" y1="10" y2="10" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                Monetization</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">Revenue ready
+                                                mobile applications</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>RevenueCat
+                                            </li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>App Store IAP
+                                            </li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Google Play
+                                                Billing</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Experience with subscriptions,
+                                            paywalls, and entitlement management.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Device & OS Integrations -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-cpu text-foreground group-hover:text-primary transition-colors">
+                                                    <rect width="16" height="16" x="4" y="4" rx="2" />
+                                                    <rect width="6" height="6" x="9" y="9" rx="1" />
+                                                    <path d="M15 2v2" />
+                                                    <path d="M15 20v2" />
+                                                    <path d="M2 15h2" />
+                                                    <path d="M2 9h2" />
+                                                    <path d="M20 15h2" />
+                                                    <path d="M20 9h2" />
+                                                    <path d="M9 2v2" />
+                                                    <path d="M9 20v2" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                OS Integrations</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">Working closely
+                                                with mobile hardware and system features</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Camera &amp;
+                                                Media</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Offline First
+                                            </li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Push
+                                                Notifications</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Built with performance and battery
+                                            efficiency in mind.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- APIs & Integrations -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-globe text-foreground group-hover:text-primary transition-colors">
+                                                    <circle cx="12" cy="12" r="10" />
+                                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                                    <path d="M2 12h20" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                APIs</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">Reliable
+                                                communication between mobile apps and services</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>REST APIs</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>WebSockets
+                                            </li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>OAuth</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Designed for security, latency, and
+                                            real time updates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI & Smart Features -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-sparkles text-foreground group-hover:text-primary transition-colors">
+                                                    <path
+                                                        d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                AI &amp; Smart Features</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">Practical AI
+                                                features inside mobile apps</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>OpenAI APIs
+                                            </li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>OCR &amp; Text
+                                                Extraction</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>AI Chat &amp;
+                                                Assist</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Implemented with clean UX and mobile
+                                            constraints in mind.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile App Delivery -->
+                        <div class="group relative" style="opacity: 1; transform: none;">
+                            <div data-slot="card"
+                                class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 h-full">
+                                <div data-slot="card-content" class="p-6 flex flex-col h-full">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <div
+                                            class="w-14 h-14 rounded-xl bg-muted p-0.5 shrink-0 group-hover:bg-primary/10 transition-colors">
+                                            <div class="w-full h-full  rounded-[11px] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-rocket text-foreground group-hover:text-primary transition-colors">
+                                                    <path
+                                                        d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                                                    <path
+                                                        d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                                                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                                                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h3
+                                                class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                                App Delivery</h3>
+                                            <p class="text-xs text-muted-foreground leading-relaxed">From development to
+                                                live production</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex-1">
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>TestFlight
+                                                &amp;
+                                                Play Console</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Store
+                                                Submissions</li>
+                                            <li class="flex items-center gap-2 text-sm text-foreground"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-primary/50"></span>Crash Handling
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/50">
+                                        <p class="text-xs text-muted-foreground">Focused on smooth releases and minimal
+                                            surprises.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What we're Known For -->
+                    <div class="mt-16" style="opacity: 1; transform: none;">
+                        <h3 class="text-2xl font-bold text-center mb-8">What we're <span class="text-primary">Known
+                                For</span></h3>
+                        <p class="text-muted-foreground text-center max-w-xl mx-auto mb-10 text-sm">Why teams trust me
+                            with mobile products</p>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                            <!-- Pixel Perfect UI -->
+                            <div class="relative group">
+                                <div data-slot="card"
+                                    class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/30 transition-all duration-300 bg-card/50 backdrop-blur-sm hover:shadow-lg">
+                                    <div data-slot="card-content" class="p-4 text-center">
+                                        <div
+                                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-primary/10 to-blue-500/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-layout-template">
+                                                <rect width="18" height="7" x="3" y="3" rx="1" />
+                                                <rect width="9" height="7" x="3" y="14" rx="1" />
+                                                <rect width="5" height="7" x="16" y="14" rx="1" />
+                                            </svg>
+                                        </div>
+                                        <div class="text-sm font-semibold text-foreground">Pixel Perfect UI</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Smooth Animations -->
+                            <div class="relative group">
+                                <div data-slot="card"
+                                    class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/30 transition-all duration-300 bg-card/50 backdrop-blur-sm hover:shadow-lg">
+                                    <div data-slot="card-content" class="p-4 text-center">
+                                        <div
+                                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-primary/10 to-blue-500/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-zap">
+                                                <path
+                                                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                                            </svg>
+                                        </div>
+                                        <div class="text-sm font-semibold text-foreground">Smooth Animations</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Clean Architecture -->
+                            <div class="relative group">
+                                <div data-slot="card"
+                                    class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/30 transition-all duration-300 bg-card/50 backdrop-blur-sm hover:shadow-lg">
+                                    <div data-slot="card-content" class="p-4 text-center">
+                                        <div
+                                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-primary/10 to-blue-500/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-layers">
+                                                <path
+                                                    d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+                                                <path
+                                                    d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+                                                <path
+                                                    d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
+                                            </svg>
+                                        </div>
+                                        <div class="text-sm font-semibold text-foreground">Clean Architecture</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Performance -->
+                            <div class="relative group">
+                                <div data-slot="card"
+                                    class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/30 transition-all duration-300 bg-card/50 backdrop-blur-sm hover:shadow-lg">
+                                    <div data-slot="card-content" class="p-4 text-center">
+                                        <div
+                                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-primary/10 to-blue-500/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-gauge">
+                                                <path d="m12 14 4-4" />
+                                                <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+                                            </svg>
+                                        </div>
+                                        <div class="text-sm font-semibold text-foreground">Performance Optimization
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ownership -->
+                            <div class="relative group">
+                                <div data-slot="card"
+                                    class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border border-border hover:border-primary/30 transition-all duration-300 bg-card/50 backdrop-blur-sm hover:shadow-lg">
+                                    <div data-slot="card-content" class="p-4 text-center">
+                                        <div
+                                            class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-primary/10 to-blue-500/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-check-circle">
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                                <polyline points="22 4 12 14.01 9 11.01" />
+                                            </svg>
+                                        </div>
+                                        <div class="text-sm font-semibold text-foreground">Ownership &amp; Delivery
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-16" style="opacity: 1; transform: none;">
+                        <div
+                            class="inline-block p-6 rounded-2xl bg-gradient-to-br from-primary/5 via-blue-500/5 to-primary/5 border border-primary/10">
+                            <p class="text-muted-foreground mb-2 text-sm">Looking to build or improve a mobile app?</p>
+                            <p class="text-foreground font-semibold">Let’s talk through your idea and map the fastest
+                                path to launch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Case Studies -->
+
+
+        <!-- Case Studies -->
+        <section class="case-studies py-24 " id="case-studies">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">Featured Mobile App Case Studies</h2>
+                    <p class="text-muted-foreground text-lg max-w-2xl mx-auto">A curated selection of production mobile
+                        applications built using Flutter and React Native.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- Razzle -->
+                    <a href="/case-studies/razzle" class="group block">
+                        <div
+                            class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-border/50 bg-card">
+                            <img src="/assets/razzle_mockup_v2.jpg" alt="Razzle Mockup"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Razzle</h3>
+                                <span
+                                    class="px-2.5 py-0.5 bg-card border border-border rounded-full text-[10px] font-medium text-muted-foreground">React
+                                    Native</span>
+                            </div>
+                            <p class="text-muted-foreground text-xs line-clamp-2">Modern dating app prioritizing
+                                authenticity and privacy</p>
+                            <div
+                                class="flex items-center text-primary font-medium text-xs mt-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- SEIYON+ -->
+                    <a href="/case-studies/seiyon-plus" class="group block">
+                        <div
+                            class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-border/50 bg-card">
+                            <img src="/assets/seiyon_plus_mockup_v2.jpg" alt="SEIYON+ Mockup"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">SEIYON+</h3>
+                                <span
+                                    class="px-2.5 py-0.5 bg-card border border-border rounded-full text-[10px] font-medium text-muted-foreground">React
+                                    Native</span>
+                            </div>
+                            <p class="text-muted-foreground text-xs line-clamp-2">Flexible digital car subscription
+                                platform</p>
+                            <div
+                                class="flex items-center text-primary font-medium text-xs mt-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Toy’sells -->
+                    <a href="/case-studies/toysells" class="group block">
+                        <div
+                            class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-border/50 bg-card">
+                            <img src="/assets/toysells_mockup_v2.jpg" alt="ToySells Mockup"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Toy’sells</h3>
+                                <span
+                                    class="px-2.5 py-0.5 bg-card border border-border rounded-full text-[10px] font-medium text-muted-foreground">Figma</span>
+                            </div>
+                            <p class="text-muted-foreground text-xs line-clamp-2">Brand focused e-commerce platform for
+                                toys</p>
+                            <div
+                                class="flex items-center text-primary font-medium text-xs mt-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Heal Like Me -->
+                    <a href="/case-studies/heal-like-me" class="group block">
+                        <div
+                            class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-border/50 bg-card">
+                            <img src="/assets/heal_like_me_mockup_v2.jpg" alt="Heal Like Me Mockup"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Heal Like Me
+                                </h3>
+                                <span
+                                    class="px-2.5 py-0.5 bg-card border border-border rounded-full text-[10px] font-medium text-muted-foreground">UI/UX</span>
+                            </div>
+                            <p class="text-muted-foreground text-xs line-clamp-2">Doctor portfolio and appointment
+                                booking app</p>
+                            <div
+                                class="flex items-center text-primary font-medium text-xs mt-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Next Step -->
+                    <a href="/case-studies/next-step" class="group block">
+                        <div
+                            class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-border/50 bg-card">
+                            <img src="/assets/next_step_mockup_v2.jpg" alt="Next Step Mockup"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Next Step</h3>
+                                <span
+                                    class="px-2.5 py-0.5 bg-card border border-border rounded-full text-[10px] font-medium text-muted-foreground">UI/UX</span>
+                            </div>
+                            <p class="text-muted-foreground text-xs line-clamp-2">Support focused mobile app for youth
+                                support</p>
+                            <div
+                                class="flex items-center text-primary font-medium text-xs mt-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Quitting Buddies -->
+                    <a href="/case-studies/quitting-buddies" class="group block">
+                        <div
+                            class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-border/50 bg-card">
+                            <img src="/assets/quitting_buddies_mockup_v2.jpg" alt="Quitting Buddies Mockup"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Quitting
+                                    Buddies</h3>
+                                <span
+                                    class="px-2.5 py-0.5 bg-card border border-border rounded-full text-[10px] font-medium text-muted-foreground">React
+                                    Native</span>
+                            </div>
+                            <p class="text-muted-foreground text-xs line-clamp-2">Accountability-driven habit change
+                                companion app</p>
+                            <div
+                                class="flex items-center text-primary font-medium text-xs mt-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center mt-12 bg-transparent text-foreground hover:bg-transparent">
+                    <a href="/case-studies"
+                        class="inline-flex items-center justify-center px-6 py-3 border border-border rounded-full text-foreground font-medium hover:border-foreground/50 transition-colors">
+                        View All Case Studies
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="process relative py-23 overflow-hidden" id="process">
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20" style="opacity: 1; transform: none;">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                        <span class="text-sm font-medium text-primary">Our Process</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">From Concept to <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-500 to-primary">App
+                            Store</span></h2>
+                    <p class="text-lg md:text-xl text-muted-foreground">A streamlined development process that delivers
+                        high-quality mobile apps. Typical timeline: 8-12 weeks from start to launch.</p>
+                </div>
+                <div class="max-w-5xl mx-auto space-y-8 lg:space-y-12">
+                    <div class="relative" style="opacity: 1; transform: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                            <div class="flex-shrink-0 relative">
+                                <div class="w-24 h-24 rounded-2xl bg-muted p-1 shadow-2xl border border-border">
+                                    <div class="w-full h-full rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-lightbulb h-10 w-10 text-primary">
+                                            <path
+                                                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5">
+                                            </path>
+                                            <path d="M9 18h6"></path>
+                                            <path d="M10 22h4"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg"
+                                    style="transform: none;">1</div>
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 lg:p-8 hover:border-primary/30 transition-all duration-500 hover:shadow-lg group">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+                                        <h3
+                                            class="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                                            Strategy &amp; Planning</h3><span
+                                            class="inline-flex px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold whitespace-nowrap">1
+                                            week</span>
+                                    </div>
+                                    <p class="text-muted-foreground mb-6 leading-relaxed text-lg">Define app goals,
+                                        target audience, and core features. Create user stories, wireframes, and
+                                        technical specifications for iOS and Android.</p>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Market research &amp; competitor
+                                                analysis</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">User personas &amp; journey
+                                                mapping</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Feature prioritization</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Platform selection (native vs
+                                                cross-platforms)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity: 1; transform: none;">
+                        <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-12 items-center">
+                            <div class="flex-shrink-0 relative">
+                                <div class="w-24 h-24 rounded-2xl bg-muted p-1 shadow-2xl border border-border">
+                                    <div class="w-full h-full rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-palette h-10 w-10 text-primary">
+                                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                                            <path
+                                                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg"
+                                    style="transform: none;">2</div>
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 lg:p-8 hover:border-primary/30 transition-all duration-500 hover:shadow-lg group">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+                                        <h3
+                                            class="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                                            UI/UX Design</h3><span
+                                            class="inline-flex px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold whitespace-nowrap">1-2
+                                            weeks</span>
+                                    </div>
+                                    <p class="text-muted-foreground mb-6 leading-relaxed text-lg">Create beautiful,
+                                        intuitive interfaces following platform guidelines. Design for both iOS and
+                                        Android with pixel-perfect precision.</p>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Wireframes &amp; user flows</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">High-fidelity mockups</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Interactive prototypes</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">iOS &amp; Android design
+                                                systems</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity: 1; transform: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                            <div class="flex-shrink-0 relative">
+                                <div class="w-24 h-24 rounded-2xl bg-muted p-1 shadow-2xl border border-border">
+                                    <div class="w-full h-full rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-code-xml h-10 w-10 text-primary">
+                                            <path d="m18 16 4-4-4-4"></path>
+                                            <path d="m6 8-4 4 4 4"></path>
+                                            <path d="m14.5 4-5 16"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg"
+                                    style="transform: none;">3</div>
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 lg:p-8 hover:border-primary/30 transition-all duration-500 hover:shadow-lg group">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+                                        <h3
+                                            class="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                                            Development</h3><span
+                                            class="inline-flex px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold whitespace-nowrap">4-6
+                                            weeks</span>
+                                    </div>
+                                    <p class="text-muted-foreground mb-6 leading-relaxed text-lg">Build native or
+                                        cross-platform apps with clean, maintainable code. Implement features, integrate
+                                        APIs, and optimize performance.</p>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Frontend development</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Backend API integration</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Database setup &amp;
+                                                optimization</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Push notifications &amp; real-time
+                                                features</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity: 1; transform: none;">
+                        <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-12 items-center">
+                            <div class="flex-shrink-0 relative">
+                                <div class="w-24 h-24 rounded-2xl bg-muted p-1 shadow-2xl border border-border">
+                                    <div class="w-full h-full rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-test-tube-diagonal h-10 w-10 text-primary">
+                                            <path
+                                                d="M21 7 6.82 21.18a2.83 2.83 0 0 1-3.99-.01a2.83 2.83 0 0 1 0-4L17 3">
+                                            </path>
+                                            <path d="m16 2 6 6"></path>
+                                            <path d="M12 16H4"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg"
+                                    style="transform: none;">4</div>
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 lg:p-8 hover:border-primary/30 transition-all duration-500 hover:shadow-lg group">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+                                        <h3
+                                            class="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                                            Testing &amp; QA</h3><span
+                                            class="inline-flex px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold whitespace-nowrap">1
+                                            week</span>
+                                    </div>
+                                    <p class="text-muted-foreground mb-6 leading-relaxed text-lg">Rigorous testing
+                                        across devices and OS versions. Automated testing, manual QA, performance
+                                        optimization, and beta testing.</p>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Unit &amp; integration testing</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Device compatibility testing</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Performance &amp; security
+                                                testing</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Beta testing with real users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity: 1; transform: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                            <div class="flex-shrink-0 relative">
+                                <div class="w-24 h-24 rounded-2xl bg-muted p-1 shadow-2xl border border-border">
+                                    <div class="w-full h-full rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-rocket h-10 w-10 text-primary">
+                                            <path
+                                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                            </path>
+                                            <path
+                                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                            </path>
+                                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg"
+                                    style="transform: none;">5</div>
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 lg:p-8 hover:border-primary/30 transition-all duration-500 hover:shadow-lg group">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+                                        <h3
+                                            class="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                                            App Store Launch</h3><span
+                                            class="inline-flex px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold whitespace-nowrap">1-2
+                                            weeks</span>
+                                    </div>
+                                    <p class="text-muted-foreground mb-6 leading-relaxed text-lg">Prepare and submit to
+                                        App Store and Play Store. Handle review process, create marketing assets, and
+                                        optimize for discoverability.</p>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">App Store listing optimization</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Screenshots &amp; preview
+                                                videos</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Store submission &amp; review</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Launch marketing support</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity: 1; transform: none;">
+                        <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-12 items-center">
+                            <div class="flex-shrink-0 relative">
+                                <div class="w-24 h-24 rounded-2xl bg-muted p-1 shadow-2xl border border-border"
+                                    style="transform: none;">
+                                    <div class="w-full h-full rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-headphones h-10 w-10 text-primary">
+                                            <path
+                                                d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg"
+                                    style="transform: none;">6</div>
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 lg:p-8 hover:border-primary/30 transition-all duration-500 hover:shadow-lg group">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+                                        <h3
+                                            class="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                                            Support &amp; Updates</h3><span
+                                            class="inline-flex px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold whitespace-nowrap">Ongoing</span>
+                                    </div>
+                                    <p class="text-muted-foreground mb-6 leading-relaxed text-lg">Ongoing maintenance,
+                                        bug fixes, and feature updates. Monitor analytics, gather feedback, and
+                                        continuously improve the app.</p>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Performance monitoring</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Bug fixes &amp; updates</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">OS compatibility updates</span>
+                                        </div>
+                                        <div class="flex items-center gap-2 text-sm"
+                                            style="opacity: 1; transform: none;">
+                                            <div class="h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0">
+                                            </div><span class="text-foreground/80">Feature enhancements</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 lg:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6" style="opacity: 1; transform: none;">
+                    <div class="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50"
+                        style="opacity: 1; transform: none;">
+                        <div class="text-2xl lg:text-3xl font-bold text-primary mb-2">
+                            8-12 weeks</div>
+                        <div class="text-sm text-muted-foreground">Average Build Time</div>
+                    </div>
+                    <div class="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50"
+                        style="opacity: 1; transform: none;">
+                        <div class="text-2xl lg:text-3xl font-bold text-primary mb-2">
+                            99%</div>
+                        <div class="text-sm text-muted-foreground">App Store Approval Rate</div>
+                    </div>
+                    <div class="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50"
+                        style="opacity: 1; transform: none;">
+                        <div class="text-2xl lg:text-3xl font-bold text-primary mb-2">
+                            Included</div>
+                        <div class="text-sm text-muted-foreground">Post-Launch Support</div>
+                    </div>
+                    <div class="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50"
+                        style="opacity: 1; transform: none;">
+                        <div class="text-2xl lg:text-3xl font-bold text-primary mb-2">
+                            5/5 ⭐</div>
+                        <div class="text-sm text-muted-foreground">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <!-- Tech Ecosystem -->
+        <!-- Powered By HBOX -->
+        <section class="tech-stack py-24 border-t border-border/50  overflow-hidden relative">
+            <div class="container text-center">
+                <p class="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-8">Powered By</p>
+                <div class="flex justify-center">
+                    <img src="/assets/hbox_logo.png" alt="HBOX Logo"
+                        class="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <!-- <p>One-Stop Software Solutions</p> -->
+            <p class="copyright">&copy; 2025. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
